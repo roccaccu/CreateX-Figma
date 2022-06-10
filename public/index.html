@@ -18,6 +18,29 @@
     />
   </head>
   <body>
+    <!-- Burger -->
+    <div class="burger-wrapper">
+      <div class="nav-burger">
+        <ul class="b-nav">
+          <li class="b-nav__item">
+            <a href="#" class="">About Us</a>
+          </li>
+          <li class="b-nav__item">
+            <a href="#" class="">Courses</a>
+          </li>
+          <li class="b-nav__item">
+            <a href="#" class="">Events</a>
+          </li>
+          <li class="b-nav__item">
+            <a href="#" class="">Blog</a>
+          </li>
+          <li class="b-nav__item">
+            <a href="#" class="">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <!-- header -->
     <div class="bg">
       <div class="container">
@@ -416,9 +439,6 @@
       </div>
     </div>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="../src/libs/js/swiper.js"></script>
-
     <!-- Testimonials -->
     <div class="testimonials">
       <div class="container">
@@ -426,10 +446,75 @@
           <h4>Testimonials</h4>
           <h2>What our students say</h2>
         </div>
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-slide-box">
+                <div class="swiper-slide-box__text">
+                  <span
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Justo, amet lectus quam viverra mus lobortis fermentum amet,
+                    eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus
+                    ornare turpis quis non. Congue tortor in euismod vulputate
+                    etiam eros. Pulvinar neque pharetra arcu diam maecenas diam
+                    integer in.</span
+                  >
+                </div>
+                <div class="swiper-slide-box-acc">
+                  <img
+                    src="../public/assets/images/jpg/image.png"
+                    alt="photo"
+                  />
+                  <div class="swiper-slide-box-acc__name">
+                    <p>Eleanor Pena</p>
+                    <span>Position, Course</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Send email -->
+    <div class="send-email">
+      <div class="send-email-wrapper">
+        <div class="send-email-wrapper-form">
+          <h4>Don’t miss anything</h4>
+          <h2>Subscribe to the Createx School announcements</h2>
+          <form
+            class="form"
+            action="https://formsubmit.co/45a5547f3a3b5a8fd69d867e534635b4"
+            method="post"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_next"
+              value="http://127.0.0.1:5500/public/index.html"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your working email"
+              required
+            />
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
       </div>
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="../src/libs/js/swiper2.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../src/libs/js/swiper.js"></script>
   </body>
 </html>

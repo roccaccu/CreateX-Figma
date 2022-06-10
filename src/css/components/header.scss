@@ -1,6 +1,40 @@
 @import "../variable.scss";
 @import "./button.scss";
 
+// Burger
+.burger-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  display: none;
+  .nav-burger {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background: rgb(159, 143, 143);
+    width: 30%;
+    height: 100%;
+
+    .b-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      gap: 30px;
+      margin-top: 50%;
+      &__item {
+        a {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+.active-burger {
+  display: flex !important;
+}
+
+// Header
 .header {
   padding-top: 1.25rem;
   padding-bottom: 4rem;
@@ -46,54 +80,37 @@
       }
     }
     &-center {
-      position: static;
+      position: absolute;
+      left: 93%;
       padding: 35px 25px;
-      max-width: 50px;
       &__burger {
         position: relative;
         width: 34px;
-        height: 1.73px;
+        height: 3px;
         background: $btn;
-        @media (max-width: $sm) {
-          width: 49px;
-          height: 3px;
-        }
+        cursor: pointer;
+
         &::before {
           content: "";
           position: absolute;
-          top: 5.19px;
+          top: 6px;
           width: 34px;
-          height: 1.73px;
+          height: 3px;
           background: $btn;
-          @media (max-width: $sm) {
-            width: 49px;
-            height: 3px;
-            top: 9px;
-          }
         }
         &::after {
           content: "";
           position: absolute;
-          bottom: 5.19px;
+          bottom: 6px;
           width: 34px;
-          height: 1.73px;
+          height: 3px;
           background: $btn;
-          @media (max-width: $sm) {
-            width: 49px;
-            height: 3px;
-            bottom: 9px;
-          }
         }
       }
 
-      @media (min-width: $md) {
-        display: none;
-      }
-
-      @media (max-width: $sm) {
-        position: static;
-        padding-right: 60px;
-      }
+      // @media (min-width: $md) {
+      //   display: none;
+      // }
     }
     &__right {
       display: flex;
